@@ -1,4 +1,4 @@
-const dbURI = 'mongodb://localhost:27017/codeshop';
+const dbURI = 'mongodb://localhost/codeshop';
 const port = 4000;
 const secret = 'hellotheregeneralkenobi';
 
