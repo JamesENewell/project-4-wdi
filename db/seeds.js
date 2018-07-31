@@ -4,12 +4,13 @@ mongoose.Promise = require('bluebird');
 const { dbURI } = require('../config/environment');
 
 const Developer = require('../models/developer');
-const User = require('../models/user');
-const Project = require('../models/project');
+// const User = require('../models/user');
+// const Project = require('../models/project');
 
 mongoose.connect(dbURI, (err, db) => {
-  db.dropDatabase()
-  .then(() => Developer.create([{
+  db.dropDatabase();
+
+  Developer.create([{
     companyName: 'Marks & Spencer Ltd',
     companySize: 'Large',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -99,40 +100,41 @@ mongoose.connect(dbURI, (err, db) => {
     location: {lat: 55.948619, lng: -3.199838},
     telNumber: '0208 438 8497',
     email: 'info@bella.com'
-  }
-  ])
+  }])
     .then(developers => console.log(`${developers.length} developer(s) created`))
 
-    .then(() => User.create([{
-      username: 'A',
-      email: 'jn@test.com',
-      password: '1234',
-      passwordConfirmation: '1234'
-    },{
-      username: 'B',
-      email: 'js@test.com',
-      password: '1234',
-      passwordConfirmation: '1234'
-    },{
-      username: 'C',
-      email: 'mg@test.com',
-      password: '1234',
-      passwordConfirmation: '1234'
-    },{
-      username: 'D',
-      email: 'gm@test.com',
-      password: '1234',
-      passwordConfirmation: '1234'
-    }]))
-    .then(users => console.log(`${users.length} user(s) created`))
+    // .then(() => User.create([{
+    //   username: 'A',
+    //   email: 'jn@test.com',
+    //   password: '1234',
+    //   passwordConfirmation: '1234'
+    // },{
+    //   username: 'B',
+    //   email: 'js@test.com',
+    //   password: '1234',
+    //   passwordConfirmation: '1234'
+    // },{
+    //   username: 'C',
+    //   email: 'mg@test.com',
+    //   password: '1234',
+    //   passwordConfirmation: '1234'
+    // },{
+    //   username: 'D',
+    //   email: 'gm@test.com',
+    //   password: '1234',
+    //   passwordConfirmation: '1234'
+    // }]))
+    // .then(users => console.log(`${users.length} user(s) created`))
+    //
+    // .then(() => Project.create([{
+    //   projectName: 'Winning',
+    //   projectType: 'Small',
+    //   projectBrief: 'To Win',
+    //   skillsRequired: 'Javascript'
+    // }]))
+    // .then(projects => console.log(`${projects.length} project(s) created`))
 
-    .then(() => Project.create([{
-      projectName: 'Winning',
-      projectType: 'Small',
-      projectBrief: 'To Win',
-      skillsRequired: 'Javascript'
-    }]))
-    .then(projects => console.log(`${projects.length} project(s) created`))
+
     .catch(err => console.log(err))
     .finally(() => mongoose.connection.close());
 });
