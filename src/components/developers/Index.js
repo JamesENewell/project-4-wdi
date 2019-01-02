@@ -48,7 +48,7 @@ class DevelopersIndex extends React.Component {
       <section className="indexSection">
 
         <div className="filters">
-          <p>Search</p>
+          <h3>Search</h3>
           <input className="input" placeholder="Company Name or Required skills" onChange={this.handleSearch} />
           <div className="control">
 
@@ -62,15 +62,15 @@ class DevelopersIndex extends React.Component {
           </div>
         </div>
 
-        <div className="columns is-multiline">
+        <div className="columns is-multiline is-mobile">
           {this.sortedAndFilteredDevelopers().map(developer =>
-            <div key={developer._id} className="column is-one-third-desktop is-half-tablet">
+            <div key={developer._id} className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
               <Link to={`/developers/${developer._id}`}>
                 <div className="card">
                   <div className="card-image">
-
-                    <img className="devImage" src={developer.image} />
-
+                    <figure className="image is-square">
+                      <img className="devImage" src={developer.image} />
+                    </figure>
                   </div>
                   <div className="card-content">
                     <div className="content">

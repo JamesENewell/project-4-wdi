@@ -1,137 +1,193 @@
- //Rotating Words on Homepage//
+//Rotating Words on Homepage//
+
 .text-wrapper {
-    text-align: center;
-    margin:15px 0;
-    color: white;
+  text-align: center;
+  margin: 15px 0;
+  color: white;
 }
+
 .animated-words {
-    display: inline-block;
-    padding-bottom: 7.5px;
+  display: inline-block;
+  padding-bottom: 7.5px;
 }
+
 .animated-words .nl:nth-child(2) {
-    -webkit-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-    animation-delay: 3s;
-    color: #eccc68;
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+  color: white;
 }
+
 .animated-words .nl:nth-child(3) {
-    -webkit-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s;
-    color: #ffa502;
+  -webkit-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+  color: white;
 }
+
 .animated-words .nl:nth-child(4) {
-    -webkit-animation-delay: 9s;
-    -ms-animation-delay: 9s;
-    animation-delay: 9s;
-    color: #ff7f50;
+  -webkit-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+  color: white;
 }
+
 .animated-words .nl:nth-child(5) {
-    -webkit-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s;
-    color: #ff6348;
+  -webkit-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+  color: white;
 }
+
 .animated-words .nl:nth-child(6) {
-    -webkit-animation-delay: 15s;
-    -ms-animation-delay: 15s;
-    animation-delay: 15s;
-    color: #ff6b81;
+  -webkit-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+  color: white;
 }
+
 .animated-words .nl:nth-child(7) {
-    -webkit-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
-    color: #ff4757;
-    
+  -webkit-animation-delay: 36s;
+  -ms-animation-delay: 36s;
+  animation-delay: 36s;
+  color: white;
 }
+
 .animated-words .nl {
-    position: absolute;
-    opacity: 0;
-    overflow: visible;
-    color: #7bed9f;
-    -webkit-animation: animateWord 24s linear 1 0s;
-    -ms-animation: animateWord 24s linear 1 0s;
-    animation: animateWord 24s linear 1 0s;
+  position: absolute;
+  opacity: 0;
+  overflow: visible;
+  color: white;
+  -webkit-animation: animateWord 42s linear 1 0s;
+  -ms-animation: animateWord 42s linear 1 0s;
+  animation: animateWord 42s linear 1 0s;
 }
 @-webkit-keyframes animateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-    5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-    20% { opacity: 0; -webkit-transform: translateY(30px); }
-    80% { opacity: 0; }
-    100% { opacity: 0; }
-}
-.animated-words .last {
-    position: absolute;
+  0% {
     opacity: 0;
-    overflow: hidden;
-    color: #6b969d;
-    -webkit-animation: animateWordLast 24s linear 1 0s;
-    -ms-animation: animateWordLast 24s linear 1 0s;
-    animation: animateWordLast 24s linear 1 0s;
-}
-@-webkit-keyframes animateWordLast {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-    5% { opacity: 1; -webkit-transform: translateY(0px);}
-    100% { opacity: 1;}
-}
-.am1 {
-  margin-top:-12px;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .animated-words .last {
-    -webkit-animation: animateWordLast 100s linear 1 18s;
-    animation: animateWordLast 100s linear 1 18s;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  color: white;
+  -webkit-animation: animateWordLast 24s linear 1 0s;
+  -ms-animation: animateWordLast 24s linear 1 0s;
+  animation: animateWordLast 24s linear 1 0s;
 }
 @-webkit-keyframes animateWordLast {
-    0% { opacity: 1; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
+.am1 {
+  margin-top: -12px;
+}
+
+.animated-words .last {
+  -webkit-animation: animateWordLast 100s linear 1 18s;
+  animation: animateWordLast 100s linear 1 18s;
+}
+@-webkit-keyframes animateWordLast {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 //Homepage Background animation//
 
 div.hero-body {
-  background: url("https://wallpaper-house.com/data/out/8/wallpaper2you_249514.jpg") repeat 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  height: 300px;
-  box-sizing: border-box;
-  -webkit-animation: slide 20s linear infinite;
-  min-height: 1200px;
+  // background: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Calming-Wallpapers-HD-Free-Download.jpg") repeat 0 0;
+  // background-size: auto 100%;
+  // background-repeat: no-repeat;
+  // width: 100%;
+  // margin: 0;
+  // text-align: center;
+  // height: 300px;
+  // box-sizing: border-box;
+  // // -webkit-animation: slide 20s linear infinite;
+  // min-height: 1200px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 main {
- background: url("https://wallpaper-house.com/data/out/8/wallpaper2you_249514.jpg") repeat 0 0;
- background-size: cover;
- width: 100%;
- margin: 0;
- text-align: center;
- height: 1800px;
- -webkit-animation: slide 20s linear infinite;
- min-height: 1200px;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Calming-Wallpapers-HD-Free-Download.jpg") repeat 0 0;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  // height: 1800px;
+  // -webkit-animation: slide 20s linear infinite;
+  min-height: 1000px;
 }
-
 //Index cards animation
 
 div.card-image {
-  background: url("https://wallpaper-house.com/data/out/8/wallpaper2you_249514.jpg") repeat 0 0;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Calming-Wallpapers-HD-Free-Download.jpg") repeat 0 0;
   background-size: cover;
   width: 100%;
   margin: 0;
   text-align: center;
-  height: 400px;
+  max-height: 400px;
   box-sizing: border-box;
   opacity: 0.9;
-
+  margin: auto;
+  padding: 10px;
 }
-
 @-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -400px 0;
+  }
 }

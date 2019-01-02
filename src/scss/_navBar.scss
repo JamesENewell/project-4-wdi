@@ -3,13 +3,14 @@
   position: fixed;
   background-color: black;
   opacity: 0.8;
-  border-radius: 20px;
-  position: sticky;;
+  // border-radius: 20px;
+  position: sticky;
+  margin-bottom: 30px;
 
 }
 
 a.navbar-item {
-  color: #ff7f50;
+  color: white;
   &:hover {
   text-decoration: underline;
   background-color: black;
@@ -18,5 +19,10 @@ a.navbar-item {
 
 div.navbar-menu.is-active {
   background-color: black;
-  margin: 50px;
+  // margin: 50px;
+
+}
+
+.navbar-burger {
+  padding: 40px;
 }

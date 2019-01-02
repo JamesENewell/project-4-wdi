@@ -12,10 +12,10 @@ except for the use of brief quotations in an online review.</p>
         <br/>
         <p>Follow us on Social Media</p>
         <ul className="socialIcons">
-          <li><a className="facebook" href="https://www.facebook.com/">Fa</a></li>
-          <li><a className="twitter" href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Tw</a></li>
-          <li><a className="instagram" href="https://www.instagram.com/?hl=en">In</a></li>
-          <li><a className="linkedIn" href="https://uk.linkedin.com/">Li</a></li>
+          <li><a className="facebook" target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/"><img className="icon"  src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" alt="facebook"/></a></li>
+          <li><a className="twitter" target='_blank' rel='noopener noreferrer' href="https://twitter.com/"><img className="icon"  src="http://www.iconarchive.com/download/i82970/limav/flat-gradient-social/Twitter.ico" alt="twitter"/></a></li>
+          <li><a className="instagram" target='_blank' rel='noopener noreferrer' href="https://www.instagram.com/?hl=en"><img  className="icon" src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Instagram-512.png" alt="instagram"/></a></li>
+          <li><a className="linkedIn" target='_blank' rel='noopener noreferrer' href="https://uk.linkedin.com/"><img className="icon"  src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png" alt="linkedIn"/></a></li>
         </ul>
       </h1>
     </div>

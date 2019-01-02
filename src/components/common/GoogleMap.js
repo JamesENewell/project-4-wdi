@@ -7,171 +7,112 @@ class GoogleMap extends React.Component {
     this.map = new google.maps.Map(this.mapCanvas, {
       center: this.props.location,
       zoom: 13,
-      styles: [
-        {
-          'featureType': 'all',
-          'elementType': 'labels.text.fill',
-          'stylers': [
-            {
-              'saturation': 36
+      styles: [{
+          'featureType': 'water',
+          'stylers': [{
+              'saturation': 43
             },
             {
-              'color': '#000000'
+              'lightness': -11
             },
             {
-              'lightness': 40
+              'hue': '#0088ff'
             }
           ]
         },
         {
-          'featureType': 'all',
-          'elementType': 'labels.text.stroke',
-          'stylers': [
-            {
-              'visibility': 'on'
-            },
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 16
-            }
-          ]
-        },
-        {
-          'featureType': 'all',
-          'elementType': 'labels.icon',
-          'stylers': [
-            {
-              'visibility': 'off'
-            }
-          ]
-        },
-        {
-          'featureType': 'administrative',
+          'featureType': 'road',
           'elementType': 'geometry.fill',
-          'stylers': [
-            {
-              'color': '#000000'
+          'stylers': [{
+              'hue': '#ff0000'
             },
             {
-              'lightness': 20
+              'saturation': -100
+            },
+            {
+              'lightness': 99
             }
           ]
         },
         {
-          'featureType': 'administrative',
+          'featureType': 'road',
           'elementType': 'geometry.stroke',
-          'stylers': [
-            {
-              'color': '#000000'
+          'stylers': [{
+              'color': '#808080'
             },
             {
-              'lightness': 17
-            },
-            {
-              'weight': 1.2
+              'lightness': 54
             }
           ]
         },
         {
-          'featureType': 'landscape',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 20
-            }
-          ]
+          'featureType': 'landscape.man_made',
+          'elementType': 'geometry.fill',
+          'stylers': [{
+            'color': '#ece2d9'
+          }]
+        },
+        {
+          'featureType': 'poi.park',
+          'elementType': 'geometry.fill',
+          'stylers': [{
+            'color': '#ccdca1'
+          }]
+        },
+        {
+          'featureType': 'road',
+          'elementType': 'labels.text.fill',
+          'stylers': [{
+            'color': '#767676'
+          }]
+        },
+        {
+          'featureType': 'road',
+          'elementType': 'labels.text.stroke',
+          'stylers': [{
+            'color': '#ffffff'
+          }]
         },
         {
           'featureType': 'poi',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 21
-            }
-          ]
+          'stylers': [{
+            'visibility': 'off'
+          }]
         },
         {
-          'featureType': 'road.highway',
+          'featureType': 'landscape.natural',
           'elementType': 'geometry.fill',
-          'stylers': [
-            {
-              'color': '#000000'
+          'stylers': [{
+              'visibility': 'on'
             },
             {
-              'lightness': 17
+              'color': '#b8cb93'
             }
           ]
         },
         {
-          'featureType': 'road.highway',
-          'elementType': 'geometry.stroke',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 29
-            },
-            {
-              'weight': 0.2
-            }
-          ]
+          'featureType': 'poi.park',
+          'stylers': [{
+            'visibility': 'on'
+          }]
         },
         {
-          'featureType': 'road.arterial',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 18
-            }
-          ]
+          'featureType': 'poi.sports_complex',
+          'stylers': [{
+            'visibility': 'on'
+          }]
         },
         {
-          'featureType': 'road.local',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 16
-            }
-          ]
+          'featureType': 'poi.medical',
+          'stylers': [{
+            'visibility': 'on'
+          }]
         },
         {
-          'featureType': 'transit',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 19
-            }
-          ]
-        },
-        {
-          'featureType': 'water',
-          'elementType': 'geometry',
-          'stylers': [
-            {
-              'color': '#000000'
-            },
-            {
-              'lightness': 17
-            }
-          ]
+          'featureType': 'poi.business',
+          'stylers': [{
+            'visibility': 'simplified'
+          }]
         }
       ]
     });
@@ -189,8 +130,12 @@ class GoogleMap extends React.Component {
   }
 
   render() {
-    return (
-      <div className='google-map' ref={element => this.mapCanvas = element} />
+    return ( <
+      div className = 'google-map'
+      ref = {
+        element => this.mapCanvas = element
+      }
+      />
     );
   }
 }

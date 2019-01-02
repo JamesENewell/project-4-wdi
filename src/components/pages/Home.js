@@ -6,7 +6,7 @@ const Home = () => {
   return (
 
     <div className="hero-body">
-      <div className="container">
+      <div className="container is-fluid">
 
         <h1 className="title homeTitle">
           Four Horsemen Development Platform
@@ -21,10 +21,10 @@ const Home = () => {
                 <span className="am1 nl">Creators</span>
                 <span className="am1 nl">Innovators</span>
                 <span className="am1 nl">Mind Changers</span>
-                <span className="am1 nl">Dragon slayers</span>
-                <span className="am1 nl">Dream weavers</span>
-                <span className="am1 nl">Heart breakers</span>
-                <span className="am1 nl">Four Horsemen</span>
+                <span className="am1 nl">Dragonslayers</span>
+                <span className="am1 nl">Dreamweavers</span>
+                <span className="am1 nl">Heartbreakers</span>
+                <span className="am1 nl">The Four Horsemen</span>
               </strong>
             </div>
             <div className="animateWordLast"></div>
@@ -33,7 +33,7 @@ const Home = () => {
             <hr />
             <SimpleSlider/>
             <hr />
-            <p className="clickMe"> Click the left of right buttons to check out some of this weeks featured work.. </p>
+            <p className="clickMe"> Click the left of right buttons to check out some of this weeks featured work...</p>
 
           </div>
           <Footer />

@@ -1,8 +1,7 @@
-
-
-
 h1.title {
   color: white;
+  font-size: 36px;
+
   &.homeTitle {
     color: white;
   }
@@ -10,39 +9,47 @@ h1.title {
 
 h2.title {
   color: white;
+
   &.subtitle {
     color: white;
-
   }
 }
+
 .homeSubtitle {
   color: white;
 }
 
-h3.title, .content {
+.content,
+h3.title {
   color: white;
 }
 
 p {
   font-weight: bold;
-  color: #ff7f50;
+  color: white;
+
   .content {
-    color: #ff7f50;
+    color: white;
   }
 }
 
 .skillsColor {
-  color: #ff4757;
+  color: white;
 }
 
 select {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway', cursive;
 }
 
 .input {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway', cursive;
+  margin-top: 5px;
 }
 
 strong {
-  color: #ff7f50;
+  color: white;
+}
+
+div.control {
+  padding-top: 10px;
 }

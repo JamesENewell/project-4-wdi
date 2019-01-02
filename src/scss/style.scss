@@ -11,7 +11,11 @@
 @import 'columns';
 
 * {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway', cursive;
+}
+
+p {
+  padding: 5px;
 }
 
 a {
@@ -45,9 +49,13 @@ a {
   padding-top: 15px;
   opacity: 0.9;
 }
-  .devPortfolio:hover {
-     margin: 0 auto;
-    transition: transform .2s;
-    transform: scale(1.5);
-    padding: 50px;
+.devPortfolio:hover {
+  margin: 0 auto;
+  transition: transform .2s;
+  transform: scale(1.5);
+  padding: 50px;
+}
+
+.container{
+
 }

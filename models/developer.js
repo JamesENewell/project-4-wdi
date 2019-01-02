@@ -14,7 +14,8 @@ const developerSchema = new mongoose.Schema({
     lng: Number
   },
   telNumber: String,
-  email: String
+  email: String,
+  portfolio: Array
 });
 
 developerSchema.path('founded')
