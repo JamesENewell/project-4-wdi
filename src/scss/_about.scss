@@ -1,60 +1,60 @@
 .joshImage {
-  border-radius: 20px;
   align-content: center;
+  border-radius: 20px;
 }
 
 .jamesImage {
-  border-radius: 20px;
   align-content: center;
+  border-radius: 20px;
 }
 
 .bubble blockquote {
-	margin: 10px 10px 0;
-	padding: 60px;
-	position: relative;
-	border: none;
-	border-radius: 8px;
-	font-size: 1.25em;
-	color: white;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 1.25em;
   font-weight: bold;
+  margin: 10px 10px 0;
   opacity: 0.7;
+  padding: 60px;
+  position: relative;
 
 }
 .bubble blockquote:before, .bubble blockquote:after {
-	content: "\201C";
-	position: absolute;
-	font-size: 80px;
-	padding: 10px;
-	line-height: 1;
-	color: white;
+  color: white;
+  content: "\201C";
+  font-size: 80px;
+  line-height: 1;
+  padding: 10px;
+  position: absolute;
 }
 .bubble blockquote:before {
-	top: 0;
-	left: 10px;
+  left: 10px;
+  top: 0;
 }
 .bubble blockquote:after {
-	content: "\201D";
-	right: 10px;
-	bottom: -.5em;
+  bottom: -.5em;
+  content: "\201D";
+  right: 10px;
 }
 .bubble div {
-	width: 0;
-	height: 0;
-	border-left: 0 solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #fff;
-	margin: 0 0 0 60px;
-	margin-bottom: 10px;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff;
+  height: 0;
+  margin-bottom: 10px;
+  margin: 0 0 0 60px;
+  width: 0;
 
 }
 .bubble cite {
-	padding-left: 20px;
-	font-size: 1.25em;
   color: white;
+  font-size: 1.25em;
+  padding-left: 20px;
 }
 
 .about-us {
-  font-size: 30px;
   color: white;
+  font-size: 30px;
   font-weight: bold;
 }

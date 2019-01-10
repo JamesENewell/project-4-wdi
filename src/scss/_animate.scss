@@ -12,55 +12,55 @@
 }
 
 .animated-words .nl:nth-child(2) {
-  -webkit-animation-delay: 6s;
   -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
   animation-delay: 6s;
   color: white;
 }
 
 .animated-words .nl:nth-child(3) {
-  -webkit-animation-delay: 12s;
   -ms-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
   animation-delay: 12s;
   color: white;
 }
 
 .animated-words .nl:nth-child(4) {
-  -webkit-animation-delay: 18s;
   -ms-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
   animation-delay: 18s;
   color: white;
 }
 
 .animated-words .nl:nth-child(5) {
-  -webkit-animation-delay: 24s;
   -ms-animation-delay: 24s;
+  -webkit-animation-delay: 24s;
   animation-delay: 24s;
   color: white;
 }
 
 .animated-words .nl:nth-child(6) {
-  -webkit-animation-delay: 30s;
   -ms-animation-delay: 30s;
+  -webkit-animation-delay: 30s;
   animation-delay: 30s;
   color: white;
 }
 
 .animated-words .nl:nth-child(7) {
-  -webkit-animation-delay: 36s;
   -ms-animation-delay: 36s;
+  -webkit-animation-delay: 36s;
   animation-delay: 36s;
   color: white;
 }
 
 .animated-words .nl {
-  position: absolute;
+  -ms-animation: animateWord 42s linear 1 0s;
+  -webkit-animation: animateWord 42s linear 1 0s;
+  animation: animateWord 42s linear 1 0s;
+  color: white;
   opacity: 0;
   overflow: visible;
-  color: white;
-  -webkit-animation: animateWord 42s linear 1 0s;
-  -ms-animation: animateWord 42s linear 1 0s;
-  animation: animateWord 42s linear 1 0s;
+  position: absolute;
 }
 @-webkit-keyframes animateWord {
   0% {
@@ -97,13 +97,13 @@
 }
 
 .animated-words .last {
-  position: absolute;
+  -ms-animation: animateWordLast 24s linear 1 0s;
+  -webkit-animation: animateWordLast 24s linear 1 0s;
+  animation: animateWordLast 24s linear 1 0s;
+  color: white;
   opacity: 0;
   overflow: hidden;
-  color: white;
-  -webkit-animation: animateWordLast 24s linear 1 0s;
-  -ms-animation: animateWordLast 24s linear 1 0s;
-  animation: animateWordLast 24s linear 1 0s;
+  position: absolute;
 }
 @-webkit-keyframes animateWordLast {
   0% {
@@ -160,26 +160,26 @@ div.hero-body {
 }
 
 main {
-  background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4650&q=80.jpg");
-  background-size: cover;
-  width: 100%;
-  text-align: center;
-  // height: 1800px;
   // -webkit-animation: slide 20s linear infinite;
+  // height: 1800px;
+  background-size: cover;
+  background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=4650&q=80.jpg");
+  text-align: center;
+  width: 100%;
 }
 //Index cards animation
 
 div.card-image {
-  background-color: #CECBCD;
   // background-size: cover;
   // width: 100%;
-  margin: 0;
-  text-align: center;
-  max-height: 400px;
+  background-color: #CECBCD;
   box-sizing: border-box;
-  opacity: 0.9;
+  margin: 0;
   margin: auto;
+  max-height: 400px;
+  opacity: 0.9;
   padding: 10px;
+  text-align: center;
 }
 @-webkit-keyframes slide {
   from {

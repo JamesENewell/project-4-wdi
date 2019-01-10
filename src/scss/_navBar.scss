@@ -1,19 +1,19 @@
 
 .navbar {
-  position: fixed;
-  background-color: black;
-  opacity: 0.8;
   // border-radius: 20px;
-  position: sticky;
+  background-color: black;
   margin-bottom: 30px;
+  opacity: 0.8;
+  position: fixed;
+  position: sticky;
 
 }
 
 a.navbar-item {
   color: white;
   &:hover {
-  text-decoration: underline;
-  background-color: black;
+    text-decoration: underline;
+    background-color: black;
   }
 }
 

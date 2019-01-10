@@ -12,7 +12,7 @@
     "start": "yarn build && node index"
   },
   "author": "Students",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.26.0",

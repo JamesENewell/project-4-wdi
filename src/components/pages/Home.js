@@ -33,7 +33,7 @@ const Home = () => {
             <hr />
             <SimpleSlider/>
             <hr />
-            <p className="clickMe"> Click the left of right buttons to check out some of this weeks featured work...</p>
+            <p className="clickMe"> Click the left or right buttons to check out some of this weeks featured work...</p>
 
           </div>
           <Footer />

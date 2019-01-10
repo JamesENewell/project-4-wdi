@@ -3,28 +3,28 @@ div.column.is-two-thirds {
   padding-top: 50px;}
   .column.is-one-third{
     padding-top: 50px;
-}
+  }
 
-div.card-image {
-  background-color: black;
-  
+  div.card-image {
+    background-color: black;
 
-}
 
-input.input {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-weight: bold;
-  border: 1px solid black;
-}
+  }
 
-div.card-content {
-  background-color: black;
-  opacity: 0.9;
-  color: white;
-  max-height: 100px;
-}
+  input.input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+  }
 
-div.card {
-  max-height: 500px;
-}
+  div.card-content {
+    background-color: black;
+    color: white;
+    max-height: 100px;
+    opacity: 0.9;
+  }
+
+  div.card {
+    max-height: 500px;
+  }
