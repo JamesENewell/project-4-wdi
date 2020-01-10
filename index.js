@@ -11,7 +11,10 @@ mongoose.Promise = require('bluebird');
 
 const { dbURI, port } = require('./config/environment');
 
-mongoose.connect(dbURI);
+mongoose.connect(dbURI, 
+  { useNewUrlParser: true,
+    useCreateIndex: true
+  });
 
 app.use(bodyParser.json());
 app.use('/api', routes);

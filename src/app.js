@@ -18,7 +18,7 @@ import Navbar from './components/common/Navbar';
 import FlashMessages from './components/common/FlashMessages';
 
 import 'bulma';
-import 'react-select/dist/react-select.css';
+// import 'react-select/dist/react-select.css';
 import './scss/style.scss';
 
 class App extends React.Component {

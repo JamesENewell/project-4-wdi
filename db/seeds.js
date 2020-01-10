@@ -5,7 +5,10 @@ const Developer = require('../models/developer');
 const User = require('../models/user');
 const Project = require('../models/project');
 
-mongoose.connect(dbURI, (err, db) => {
+mongoose.connect(dbURI, {
+  useNewUrlParser: true,
+  useCreateIndex: true
+}, (err, db) => {
   db.dropDatabase()
     .then(() => Developer.create([{
       companyName: 'Marks & Spencer Ltd',
