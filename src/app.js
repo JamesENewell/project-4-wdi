@@ -45,8 +45,6 @@ class App extends React.Component {
           </div>
         </main>
       </BrowserRouter>
-
-
     );
   }
 }

@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
-const moment = require('moment');
+const mongoose = require("mongoose");
+import { format } from "date-fns";
 
 const developerSchema = new mongoose.Schema({
   // add more keys/values if we think of anything else that's needed
   companyName: String,
-  companySize: { type: String, enum: ['Small', 'Medium', 'Large', 'Unknown'] },
+  companySize: { type: String, enum: ["Small", "Medium", "Large", "Unknown"] },
   founded: Date,
   description: String,
   image: String,
@@ -18,11 +18,10 @@ const developerSchema = new mongoose.Schema({
   portfolio: Array
 });
 
-developerSchema.path('founded')
-  .get(function formatDate(dob) {
-    return moment(dob).format('YYYY-MM-DD');
-  });
+developerSchema.path("founded").get(function formatDate(dob) {
+  return format( Date(dob), 'YYYY/MM/DD');
+});
 
-developerSchema.set('toJSON', { getters: true });
+developerSchema.set("toJSON", { getters: true });
 
-module.exports = mongoose.model('Developer', developerSchema);
+module.exports = mongoose.model("Developer", developerSchema);
